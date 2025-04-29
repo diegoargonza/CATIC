@@ -1,57 +1,66 @@
 ---
+//Imagenes para carrusel 
 import bgImageR24 from "../assets/bnr_resultados24.webp";
 import bgImage0 from "../assets/bannerPrincipios.webp";
 import conv25 from "../assets/bnr_conv25.jpg";
 import cata25 from "../assets/bnr_catalogo25.jpg";
+import Slides from "./Slides.astro";
 
 ---
 
-
-
 <div class="relative w-full max-w-6xl mx-auto overflow-hidden mt-4" id="carousel">
-    <div class="flex transition-transform duration-500" id="carousel-slides">
-      <!-- Slide 1 -->
-      <div class=" relative w-full flex-shrink-0">
-        <img src={bgImageR24} class="w-full" alt="Slide 1">
-        <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black/50">
-            <h2 class="text-2xl font-bold">Proceso de alta</h2>
-            <p class="text-lg">Haz click aquí para conocer los detalles</p>
-        </div>
-      </div>
+  <div class="flex transition-transform duration-500" id="carousel-slides">
+    <!--Slide 1 -->
+    <Slides
+      titulo = "Proceso de alta de equipos"
+      fondo = "bg-rose-600/60"
+      texto = "Haz click aquí para conocer los detalles"
+      imagen={bgImageR24}
+      enlace="../../public/docs/Proceso_de_registro_de_alta_a_reserva_2024.pdf"
+    />
+    <!--Slide 2 -->
+    <Slides
+      titulo = "Principios del software libre y código abierto en al UNAM"
+      fondo = "bg-indigo-600/60"
+      enlace=""
+      texto = "Haz click aquí para conocer los detalles"
+      imagen={bgImage0}
+    />
+    <!--Slide 3 -->
+    <Slides
+      titulo = "Catálogo base para equipo de cómputo y periféricos  "
+      fondo = "bg-green-600/60"
+      enlace="../../public/docs/CatalogoBase-2025-180325.pdf"
+      texto = "Haz click aquí para conocer los detalles"
+      imagen={cata25}
+    />
 
-      <!-- Slide 2 -->
-     <div class="relative w-full flex-shrink-0">
-        <img src={bgImage0} class="w-full" alt="Slide 2">
-        <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black/50">
-            <h2 class="text-2xl font-bold">Principios de software libre y código abierto en al UNAM</h2>
-            <p class="text-lg">Haz click aquí para conocer los detalles</p>
-        </div>
-      </div>
+    <Slides
+      titulo = "Convocatoria 2025 para la asignación de equipos de cómputo"
+      fondo = "bg-purple-600/60"
+      enlace="../../public/docs/catic_convocatoria_2025.pdf"
+      texto = "Haz click aquí para conocer los detalles"
+      imagen={conv25}
+    />
+  </div> 
 
-      <!-- Slide 3 -->
-      <div class="relative w-full flex-shrink-0">
-        <img src={conv25} class="w-full" alt="Slide 3">
-        <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black/50">
-            <h2 class="text-2xl font-bold">Convocatoria 2025 para la asignación de equipos de cómputo</h2>
-            <p class="text-lg">Haz click aquí para conocer los detalles</p>
-        </div>
-      </div>
+  <!--Botones -->
 
-    </div>
-  
-    <!-- Botones de navegación -->
-    <button id="prevBtn" class="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 bg-white hover:bg-gray-300 text-gray-800 hover:text-blue-600 rounded-full p-2 md:p-3 shadow-md md:shadow-lg transition-all duration-200">
-        &larr;
-    </button>
-    <button id="nextBtn" class="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 bg-white hover:bg-gray-300 text-gray-800 hover:text-blue-600 rounded-full p-2 md:p-3 shadow-md md:shadow-lg transition-all duration-200">
-        &rarr;
-    </button>
+  <button id="prevBtn" class="absolute left-2 md:left-4 bottom-1 -translate-y-1/2 bg-white hover:bg-gray-300 text-gray-800 hover:text-blue-600 rounded-full p-2 md:p-3 shadow-md md:shadow-lg transition-all duration-500">
+      &larr;
+  </button>
+  <button id="nextBtn" class="absolute right-2 md:right-4 bottom-1 -translate-y-1/2 bg-white hover:bg-gray-300 text-gray-800 hover:text-blue-600 rounded-full p-2 md:p-3 shadow-md md:shadow-lg transition-all duration-500">
+      &rarr;
+  </button>
+
   </div>
-  	  
+</div>
 
- <script>
+
+<script>
     
-    import { initCarrusel } from '../scripts/carrusel';
-    initCarrusel();
+  import { initCarrusel } from '../scripts/carrusel';
+  initCarrusel();
 
- </script>
+</script>
+

@@ -1,7 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Secciones from '../components/secciones.astro';
-
+import Tarjeta from '../components/tarjeta.astro';
 
 import escNORMATECA from "../assets/esc_NORMATECA.jpg";
 import escREDTIC from "../assets/esc_REDTIC.jpg";
@@ -15,8 +14,9 @@ import bgImg3 from '../assets/acuerdo2.webp';
 import bgImg4 from '../assets/convocatorias.webp';
 import bgImg5 from '../assets/sistemas_respTIC.webp';
 import bgImg6 from '../assets/normatividad.webp'
-import Carrusel from '../components/carrusel.astro';
 
+
+import Carrusel from '../components/carrusel.astro';
 
 ---
 
@@ -30,9 +30,9 @@ import Carrusel from '../components/carrusel.astro';
 
 		
 		<!--Tarjetas-->
-		<section class="flex flex-wrap justify-center text-center ">
+		<section class="flex flex-wrap justify-center text-center  ">
 			<!--Quines somos -->
-			<Secciones 
+			<Tarjeta 
 			nombre="Quienes Somos" 
 			url= {bgImg}
 			enlace = "/quienes"
@@ -40,7 +40,7 @@ import Carrusel from '../components/carrusel.astro';
 			colorTriangle = "bg-indigo-800"
 			/>
 			<!--Consejeros 2019-2021 -->
-			<Secciones 
+			<Tarjeta 
 			nombre="Consejeros 2019-2021"
 			url= {bgImg2} 
 			enlace = "/consejeros"
@@ -48,15 +48,18 @@ import Carrusel from '../components/carrusel.astro';
 			colorTriangle = "bg-green-700"
 			/>
 			<!--Acuerdos -->
-			<Secciones 
+			<Tarjeta 
 			nombre="Acuerdos"
 			url= {bgImg3} 
 			enlace = "/quienes"
 			colorTitle ="bg-blue-600"
 			colorTriangle = "bg-blue-800"
 			/>
+			<div class="w-full hidden lg:block">
+
+			</div>
 			<!--Convocatorias -->
-			<Secciones 
+			<Tarjeta 
 			nombre="Convocatorias"
 			url= {bgImg4}
 			enlace = "/convocatorias" 
@@ -64,7 +67,7 @@ import Carrusel from '../components/carrusel.astro';
 			colorTriangle = "bg-rose-800"
 			/>
 			<!--Sistemas para responsables TIC -->
-			<Secciones 
+			<Tarjeta 
 			nombre="Sistemas para responsables TIC"
 			url= {bgImg5} 
 			enlace = "/sistemastic"
@@ -72,7 +75,7 @@ import Carrusel from '../components/carrusel.astro';
 			colorTriangle = "bg-orange-800"
 			/>
 			<!--Normatividad -->
-			<Secciones 
+			<Tarjeta 
 			nombre="Normatividad"
 			url= {bgImg6}
 			enlace = "/normatividad" 

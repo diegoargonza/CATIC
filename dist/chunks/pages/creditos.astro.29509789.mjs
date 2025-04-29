@@ -1,78 +1,14 @@
-<!DOCTYPE html>
-<html lang="es">
-	<head>
-		<!-- Google tag (gtag.js) -->
-		<script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-FFB58N1XJT"></script>
+/* empty css                         */import { c as createAstro, a as createComponent, r as renderTemplate, d as renderComponent, m as maybeRenderHead } from '../astro.067e9727.mjs';
+import 'html-escaper';
+import { $ as $$Layout } from './censo22.astro.0d45ef3f.mjs';
+/* empty css                              *//* empty css                             */
+const $$Astro = createAstro();
+const $$Creditos = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
+  Astro2.self = $$Creditos;
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Cr\xE9ditos | CATIC", "class": "astro-6CNH3OYJ" }, { "default": ($$result2) => renderTemplate`
 
-<script type="text/partytown">
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-FFB58N1XJT');
-</script>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width">
-		<title>Créditos | CATIC</title>
-		<meta name="description" content="Sitio web para el Consejo Asesor en Tecnologías de Información y Comunicación de la UNAM">
-		<link rel="icon" type="image" href="/catic_icon.png">
-		<link rel="stylesheet" href="/css/all.min.css">
-		<meta name="generator" content="Astro v2.5.2">	
-		
-	<link rel="stylesheet" href="/_astro/404.a1b2a382.css" />
-<link rel="stylesheet" href="/_astro/creditos.015ab348.css" />
-<link rel="stylesheet" href="/_astro/censo22.be14ef93.css" /><script type="module" src="/_astro/hoisted.96b34eb8.js"></script></head>
-	<body class="md:flex flex-col h-screen justify-between">
-	
-		<div>
-			<!--Header --><header class="bg-[url('/bg_head.jpg')] h-14 md:h-24 pl-2 pr-2 border-b-1 border-black">
-    <!-- flex md:justify-between lg:mr-80 lg:ml-80 lg:pt-6 -->
-    <div class="flex md:justify-between xl:mr-80 xl:ml-80 lg:pt-6">
-        <!-- w-full text-center border mt-2 p-4 lg:mt-0 lg:p-0 -->
-        <div class="w-full flex justify-start md-block  p-4  lg:mt-0 lg:p-0">
-            <a href="https://www.unam.mx" target="_blank"><img src="/_astro/UNAM.aa792623.png" alt="UNAM" width="182" height="auto" class="-mt-1 md:-mt-0 w-[122px] h-auto sm:h-12 sm:w-auto "></a>
-        </div>
-        <div class="invisible md:visible md:p-6 md:mt-2 lg:mt-0 lg:p-0 md:w-72 flex justify-end">
-            <a href="https://catic.unam.mx" target="_blank"><img src="/_astro/CATIC.2678840c.png" alt="Logo CATIC" class=" md:h-9 w-auto lg:h-12"></a>
-        </div>
-    </div>
-   
-</header>
-
-<!--Navegación -->
-
-<nav class="relative bg-venice-blue-800 h-20 md:h-14">
-    <div class="max-w-screen-xl flex flex-wrap justify-end ml-56 md:ml-52 xl:ml-[600px] mr-4 pt-3">
-
-        <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-          <span class="sr-only">Open main menu</span>
-          <svg class="w-6 h-6" width="50" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-        </button>
-        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg  md:flex-row md:space-x-8 md:mt-0   dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            <li>
-              <a href="/" class="block py-2 pl-3 pr-4 text-ath-gray-300 bg-blue-700 rounded md:bg-transparent md:text-ath-gray-50 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page"><i class="fa-solid fa-house-chimney"></i></a>
-            </li>
-            <li>
-              <a href="/quienes" class="block py-2 pl-3 pr-4 text-ath-gray-300 bg-white md:bg-transparent rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-ath-gray-50 md:p-0 dark:text-white md:dark:hover:text-ath-gray-50 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Quienes somos</a>
-            </li>
-            <li>
-              <a href="/consejeros/" class="block py-2 pl-3 pr-4 text-ath-gray-300 bg-white md:bg-transparent rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-ath-gray-50 md:p-0 dark:text-white md:dark:hover:text-ath-gray-50 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Consejeros</a>
-            </li>
-            <li>
-              <a href="https://www.red-tic.unam.mx/recursos/UNAM_AcuerdoCreacionCATIC2009.pdf" target="_blank" class="block py-2 pl-3 pr-4 text-ath-gray-300 bg-white md:bg-transparent rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-ath-gray-50 md:p-0 dark:text-white md:dark:hover:text-ath-gray-50 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Acuerdo</a>
-            </li>
-            <li>
-              <a href="/convocatorias/" class="block py-2 pl-3 pr-4 text-ath-gray-300 bg-white md:bg-transparent rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-ath-gray-50 md:p-0 dark:text-white md:dark:hover:text-ath-gray-50 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Convocatorias</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-</nav>
-		</div>
-		<div>
-			
-
-    <main class="astro-6CNH3OYJ">
+    ${maybeRenderHead($$result2)}<main class="astro-6CNH3OYJ">
         <h1 class="font-roboto text-4xl text-center  mt-5 md:mt-10 mb-5 astro-6CNH3OYJ">Directorio institucional</h1>
         
         
@@ -209,25 +145,10 @@
 
     
 
+` })}`;
+}, "/Users/diego/Documents/CATIC-DIEGO/CATIC/src/pages/creditos.astro");
 
-		</div>
-		<footer class="bg-venice-blue-800 h-auto mt-10 pb-10">
-    <div class="flex flex-col justify-center items-center mx-4 sm:mx-0 p-3">
-       
-        <div class="text-sm text-ath-gray-50 text-center mt-3">
-           
-            <span>Hecho en México, Universidad Nacional Autónoma de México (UNAM), todos los derechos reservados 2024.</span>
-        </div>
+const $$file = "/Users/diego/Documents/CATIC-DIEGO/CATIC/src/pages/creditos.astro";
+const $$url = "/creditos";
 
-        <div class="text-sm text-ath-gray-50">
-            <a href="/creditos/" class="underline pr-1 pl-1">Créditos</a>
-            |
-            <a href="mailto:catic@unam.mx" class="underline pr-1 pl-1">Contacto</a>
-        </div>
-
-    </div>
-</footer>
-		
-	
-	</body>
-</html>
+export { $$Creditos as default, $$file as file, $$url as url };

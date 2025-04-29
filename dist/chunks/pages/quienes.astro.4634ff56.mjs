@@ -1,0 +1,75 @@
+/* empty css                         */import { c as createAstro, a as createComponent, r as renderTemplate, d as renderComponent, m as maybeRenderHead } from '../astro.067e9727.mjs';
+import 'html-escaper';
+import { $ as $$Layout } from './censo22.astro.0d45ef3f.mjs';
+/* empty css                             */
+const $$Astro = createAstro();
+const $$Quienes = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
+  Astro2.self = $$Quienes;
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Qui\xE9nes somos | CATIC" }, { "default": ($$result2) => renderTemplate`
+
+    ${maybeRenderHead($$result2)}<main class="mb-16">
+        
+        <h1 class="text-4xl text-center mt-5 md:mt-10">Quiénes somos</h1>
+        <div class="flex justify-center items-center text-justify">
+            <div class="w-[730px] mt-2 mx-4">
+                <p class="mb-4">El Consejo Asesor en Tecnologías de Información y Comunicación es un órgano colegiado que se encarga de:</p>
+                <ol class="ml-5">
+                    <li>
+                       <strong>I.</strong>  Establecer los lineamientos sobre los que se deberán elaborar los planes estratégicos de Tecnologías de Información y Comunicación (TIC) dentro de la Universidad;
+                    </li>
+                    <li>
+                        <strong>II.</strong> Sugerir políticas que orienten, apoyen y contribuyan a justificar las decisiones referentes al desarrollo, adquisición, administración y uso de TIC en la Universidad;
+                    </li>
+                    <li>
+                        <strong>III.</strong> Crear comisiones especiales o permanentes a fin de llevar a cabo investigaciones, encuestas y otros estudios que permitan a los consejeros obtener la información que requieran para fundamentar sus opiniones y sugerencias;
+                    </li>
+                    <li>
+                        <strong>IV.</strong> Promover iniciativas para mantener actualizada la información referente a los recursos informáticos de la Universidad, incluyendo hardware, software, laboratorios de cómputo, convenios con proveedores y con otras organizaciones, e infraestructura de comunicaciones, entre otros, y 
+                    </li>
+                    <li>
+                        <strong>V.</strong> Promover la búsqueda de recursos especiales universitarios y extrauniversitarios para apoyar el desarrollo de TIC en la Universidad. 
+                    </li>
+                </ol>
+
+                <p class="mt-4 mb-4">El Consejo está integrado por: </p>
+                <ol class="ml-5">
+                    <li>
+                        <strong>I.</strong> El Rector, quien fungirá como su Presidente;
+                    </li>
+                    <li>
+                        <strogn>II. El Secretario General; quien suplirá al Presidente en caso de ausencia;
+                    </strogn></li>
+                    <li>
+                        <strong>III.</strong> El Director General de Cómputo y de Tecnologías de Información y Comunicación; quien fungirá como Secretario Técnico del Consejo;
+                    </li>
+                    <li>
+                        <strong>IV.</strong> Seis consejeros nombrados y removidos libremente por el Rector, de las siguientes instancias universitarias:
+                        <ol class="ml-5">
+                            <li>a. Sistema de Bachillerato; </li>
+                            <li>b. Escuelas Nacionales y Facultades en Ciudad Universitaria; </li>
+                            <li>c. Facultades de Estudios Superiores; </li>
+                            <li>d. Campi universitarios foráneos; </li>
+                            <li>e. Institutos y Centros de investigación, y </li>
+                            <li>f. Dependencias administrativas. </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <strong>V.</strong> Dos vocales representantes expertos de entidades externas, los cuales tengan reconocida madurez en el uso amplio e intensivo de TIC, quienes contarán con voz. 
+                    </li>
+                </ol>
+                <p class="mt-4">Los consejeros señalados en las fracciones IV y V, durarán en su encargo un periodo de dos años, pudiendo ser nombrados por otro periodo igual.</p>
+    
+            </div>
+        </div>
+        
+        
+    </main>
+
+` })}`;
+}, "/Users/diego/Documents/CATIC-DIEGO/CATIC/src/pages/quienes.astro");
+
+const $$file = "/Users/diego/Documents/CATIC-DIEGO/CATIC/src/pages/quienes.astro";
+const $$url = "/quienes";
+
+export { $$Quienes as default, $$file as file, $$url as url };

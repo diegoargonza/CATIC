@@ -1,0 +1,22 @@
+---
+ interface Props {
+
+    titulo: string
+    texto: string
+    fondo: string
+    imagen: string
+    enlace?: string
+ }
+
+ const {titulo, texto, fondo, imagen, enlace} = Astro.props;
+---
+    <div class=" relative w-full flex-shrink-0 ">
+        <img src={imagen} class="w-full " alt="Slide 1">
+        <div class={`absolute inset-0 flex flex-col items-center justify-center text-white ${fondo}`}>
+            <h2 class="text-5xl font-bold text-center p-4">{titulo}</h2>
+            <p class="text-lg cursor-pointer hover:text-gray-300"><a href={enlace}>{texto}</a></p>
+        </div>
+    </div>
+
+
+

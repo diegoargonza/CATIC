@@ -1,0 +1,174 @@
+/* empty css                         */import { c as createAstro, a as createComponent, r as renderTemplate, m as maybeRenderHead, b as addAttribute, d as renderComponent, e as renderHead, f as renderSlot } from '../astro.067e9727.mjs';
+import 'html-escaper';
+/* empty css                             */
+var __freeze = Object.freeze;
+var __defProp = Object.defineProperty;
+var __template = (cooked, raw) => __freeze(__defProp(cooked, "raw", { value: __freeze(raw || cooked.slice()) }));
+var _a;
+const $$Astro$4 = createAstro();
+const $$Analitica = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro$4, $$props, $$slots);
+  Astro2.self = $$Analitica;
+  return renderTemplate(_a || (_a = __template([`<script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-FFB58N1XJT"><\/script>
+
+<script type="text/partytown">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-FFB58N1XJT');
+<\/script>`])));
+}, "/Users/diego/Documents/CATIC-DIEGO/CATIC/src/components/analitica.astro");
+
+const $$Astro$3 = createAstro();
+const $$Footer = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro$3, $$props, $$slots);
+  Astro2.self = $$Footer;
+  return renderTemplate`${maybeRenderHead($$result)}<footer class="bg-venice-blue-800 h-auto mt-10 pb-10">
+    <div class="flex flex-col justify-center items-center mx-4 sm:mx-0 p-3">
+       
+        <div class="text-sm text-ath-gray-50 text-center mt-3">
+           
+            <span>Hecho en México, Universidad Nacional Autónoma de México (UNAM), todos los derechos reservados 2024.</span>
+        </div>
+
+        <div class="text-sm text-ath-gray-50">
+            <a href="/creditos/" class="underline pr-1 pl-1">Créditos</a>
+            |
+            <a href="mailto:catic@unam.mx" class="underline pr-1 pl-1">Contacto</a>
+        </div>
+
+    </div>
+</footer>`;
+}, "/Users/diego/Documents/CATIC-DIEGO/CATIC/src/components/footer.astro");
+
+const bgImage = "/_astro/UNAM.aa792623.png";
+
+const bgImage2 = "/_astro/CATIC.2678840c.png";
+
+const $$Astro$2 = createAstro();
+const $$Navegacion = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro$2, $$props, $$slots);
+  Astro2.self = $$Navegacion;
+  return renderTemplate`<!--Header -->${maybeRenderHead($$result)}<header class="bg-[url('/bg_head.jpg')] h-14 md:h-24 pl-2 pr-2 border-b-1 border-black">
+    <!-- flex md:justify-between lg:mr-80 lg:ml-80 lg:pt-6 -->
+    <div class="flex md:justify-between xl:mr-80 xl:ml-80 lg:pt-6">
+        <!-- w-full text-center border mt-2 p-4 lg:mt-0 lg:p-0 -->
+        <div class="w-full flex justify-start md-block  p-4  lg:mt-0 lg:p-0">
+            <a href="https://www.unam.mx" target="_blank"><img${addAttribute(bgImage, "src")} alt="UNAM" width="182" height="auto" class="-mt-1 md:-mt-0 w-[122px] h-auto sm:h-12 sm:w-auto "></a>
+        </div>
+        <div class="invisible md:visible md:p-6 md:mt-2 lg:mt-0 lg:p-0 md:w-72 flex justify-end">
+            <a href="https://catic.unam.mx" target="_blank"><img${addAttribute(bgImage2, "src")} alt="Logo CATIC" class=" md:h-9 w-auto lg:h-12"></a>
+        </div>
+    </div>
+   
+</header>
+
+<!--Navegación -->
+
+<nav class="relative bg-venice-blue-800 h-20 md:h-14">
+    <div class="max-w-screen-xl flex flex-wrap justify-end ml-56 md:ml-52 xl:ml-[600px] mr-4 pt-3">
+
+        <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-6 h-6" width="50" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg  md:flex-row md:space-x-8 md:mt-0   dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+              <a href="/" class="block py-2 pl-3 pr-4 text-ath-gray-300 bg-blue-700 rounded md:bg-transparent md:text-ath-gray-50 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page"><i class="fa-solid fa-house-chimney"></i></a>
+            </li>
+            <li>
+              <a href="/quienes" class="block py-2 pl-3 pr-4 text-ath-gray-300 bg-white md:bg-transparent rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-ath-gray-50 md:p-0 dark:text-white md:dark:hover:text-ath-gray-50 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Quienes somos</a>
+            </li>
+            <li>
+              <a href="/consejeros/" class="block py-2 pl-3 pr-4 text-ath-gray-300 bg-white md:bg-transparent rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-ath-gray-50 md:p-0 dark:text-white md:dark:hover:text-ath-gray-50 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Consejeros</a>
+            </li>
+            <li>
+              <a href="https://www.red-tic.unam.mx/recursos/UNAM_AcuerdoCreacionCATIC2009.pdf" target="_blank" class="block py-2 pl-3 pr-4 text-ath-gray-300 bg-white md:bg-transparent rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-ath-gray-50 md:p-0 dark:text-white md:dark:hover:text-ath-gray-50 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Acuerdo</a>
+            </li>
+            <li>
+              <a href="/convocatorias/" class="block py-2 pl-3 pr-4 text-ath-gray-300 bg-white md:bg-transparent rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-ath-gray-50 md:p-0 dark:text-white md:dark:hover:text-ath-gray-50 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Convocatorias</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+</nav>`;
+}, "/Users/diego/Documents/CATIC-DIEGO/CATIC/src/components/navegacion.astro");
+
+const $$Astro$1 = createAstro();
+const $$Layout = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
+  Astro2.self = $$Layout;
+  const { title } = Astro2.props;
+  return renderTemplate`<html lang="es">
+	<head>
+		<!-- Google tag (gtag.js) -->
+		${renderComponent($$result, "Analitica", $$Analitica, {})}
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>${title}</title>
+		<meta name="description" content="Sitio web para el Consejo Asesor en Tecnologías de Información y Comunicación de la UNAM">
+		<link rel="icon" type="image" href="/catic_icon.png">
+		<link rel="stylesheet" href="/css/all.min.css">
+		<meta name="generator"${addAttribute(Astro2.generator, "content")}>	
+		
+	${renderHead($$result)}</head>
+	<body class="md:flex flex-col h-screen justify-between">
+	
+		<div>
+			${renderComponent($$result, "Navegation", $$Navegacion, {})}
+		</div>
+		<div>
+			${renderSlot($$result, $$slots["default"])}
+		</div>
+		${renderComponent($$result, "Footer", $$Footer, {})}
+		
+	
+	</body>
+</html>`;
+}, "/Users/diego/Documents/CATIC-DIEGO/CATIC/src/layouts/Layout.astro");
+
+const $$Astro = createAstro();
+const $$Censo22 = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
+  Astro2.self = $$Censo22;
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Censo de c\xF3mputo 2022 | CATIC" }, { "default": ($$result2) => renderTemplate`
+
+
+    ${maybeRenderHead($$result2)}<main class="mt-8 mb-16">
+        <h1 class="text-4xl text-center mt-14">Censo TIC 2022</h1>
+        <h3 class="text-2xl text-center">(cómputo, periféricos, telecomunicaciones, software y desarrollo de las TIC)</h3>
+            <div class="flex justify-center items-center">
+                <div class="w-[730px] mt-4 mx-4">
+                    <p class="text-center mb-8">
+                        El Consejo Asesor en Tecnologías de Información y Comunicación (CATIC) de la UNAM agradece a las entidades 
+                        y dependencias que participaron en el Censo de Cómputo por los datos proporcionados, que permitirá ampliar 
+                        las configuraciones de equipos ofertadas en la convocatoria 2023 y tomarlos en cuenta en la distribución de 
+                        los recursos de cómputo con base en las necesidades expresadas.
+                    </p>
+                
+                    <p class="text-center font-bold mt-4 mb-4">ATENTAMENTE: </p>
+                    <p class="text-center"><i>“POR MI RAZA HABLARÁ EL ESPÍRITU”</i></p>
+                    <p class="text-center">Cd. Universitaria, Cd. Mx., 3 de marzo de 2023.</p>
+                    <p class="text-center font-bold mb-4"> CONSEJO ASESOR EN TECNOLOGÍAS DE INFORMACIÓN Y COMUNICACIÓN</p>
+                    
+                </div>
+        </div>
+
+    </main>
+
+
+` })}`;
+}, "/Users/diego/Documents/CATIC-DIEGO/CATIC/src/pages/censo22.astro");
+
+const $$file = "/Users/diego/Documents/CATIC-DIEGO/CATIC/src/pages/censo22.astro";
+const $$url = "/censo22";
+
+const censo22 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+    __proto__: null,
+    default: $$Censo22,
+    file: $$file,
+    url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+export { $$Layout as $, censo22 as c };

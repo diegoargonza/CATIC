@@ -7,11 +7,11 @@ interface Props{
 const {image1, image2} = Astro.props
 ---
 
-<div class="bg-ath-gray-100 sm:w-[360px] h-[199px] rounded-md border-2 border-ath-gray-200 border-t-0 shadow-xl">
-    <div class="relative flex justify-center pt-3">
-        <img class="w-[330px] h-[130px]" src={image1} alt="">
-        <div class="absolute">
-            <img class="w-[83px] h-[80px] rounded-full mt-24" src={image2} alt="">
+<div class="bg-ath-gray-100 sm:w-[700px] h-[400px] rounded-md border-2 border-ath-gray-200 border-t-0 shadow-xl">
+    <div class="relative flex justify-center pt-10">
+        <img class="w-[500px] h-[300px] rounded-md" src={image1} alt="">
+        <div class="absolute bottom-0">
+            <img class="w-[83px] h-[80px] rounded-full" src={image2} alt="">
         </div>
     </div>
 </div>

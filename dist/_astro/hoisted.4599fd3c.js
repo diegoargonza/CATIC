@@ -1,0 +1,1 @@
+import"./hoisted.96b34eb8.js";function d(){const n=document.getElementById("carousel-slides"),t=n.children.length;let e=0;function s(){const l=-e*100;n.style.transform=`translateX(${l}%)`}document.getElementById("prevBtn").addEventListener("click",()=>{e=(e-1+t)%t,s()}),document.getElementById("nextBtn").addEventListener("click",()=>{e=(e+1)%t,s()})}d();
