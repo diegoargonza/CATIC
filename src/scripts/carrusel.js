@@ -21,5 +21,4 @@ export function initCarrusel(){
     updateCarousel();
   });
 
-
 }
