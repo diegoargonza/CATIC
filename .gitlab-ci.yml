@@ -1,0 +1,37 @@
+stages:
+    - dev
+    - produccion
+dev:
+    variables: 
+       USER: "portalcatic"
+       SRC_DIR: "/home/$USER/src"
+       DIST_DIR: "/home/$USER/src/dist" 
+       WEB_DIR: "/home/$USER/public_html" 
+       IP: "132.248.63.128"
+    stage: dev
+    script:
+        - echo "Copiando al servidor de desarrollo"
+        - rsync -vv -rz --checksum --exclude-from='.exclude_rsync' ./ portalcatic@lapislaszuli.dcaa.unam.mx:/home/portalcatic/src/
+        - ssh $USER@$IP "npm install --prefix $SRC_DIR/"
+        - ssh $USER@$IP "npm run build --prefix $SRC_DIR/"
+        - ssh $USER@$IP "cp -R $DIST_DIR/* $WEB_DIR"
+    environment:
+        name: desarrollo
+        url: http://lapislaszuli.dcaa.unam.mx/
+    only:
+        - develop
+produccion:
+    variables: 
+        USER: "catic"
+        WEB_DIR: "/home/$USER/public_html" 
+        IP: "132.247.70.179"
+    stage: produccion
+    script:
+        - echo "Copiando al servidor de produccion"
+        - rsync -vv -rz --checksum --exclude-from='.exclude_rsync' ./dist/* $USER@$IP:$WEB_DIR/                        
+    environment:
+        name: produccion
+        url: https://catic.unam.mx/
+    only:
+        - main
+    when: manual

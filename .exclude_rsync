@@ -1,0 +1,6 @@
+- .git/
+- .gitignore
+- .gitlab-ci.yml
+- .exclude_rsync
+- README.md
+- _notes/

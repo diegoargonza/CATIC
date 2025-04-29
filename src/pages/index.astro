@@ -1,0 +1,98 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Secciones from '../components/secciones.astro';
+
+
+import escNORMATECA from "../assets/esc_NORMATECA.jpg";
+import escREDTIC from "../assets/esc_REDTIC.jpg";
+import escDGTIC from "../assets/esc_DGTIC.jpg";
+import escDGPr from "../assets/esc_DGPr.png";
+
+//Imagenes para tarjetas
+import bgImg from '../assets/quienes.webp';
+import bgImg2 from '../assets/consejeros.webp';
+import bgImg3 from '../assets/acuerdo2.webp';
+import bgImg4 from '../assets/convocatorias.webp';
+import bgImg5 from '../assets/sistemas_respTIC.webp';
+import bgImg6 from '../assets/normatividad.webp'
+import Carrusel from '../components/carrusel.astro';
+
+
+---
+
+<Layout title="CATIC">
+
+	<main class="mb-5">
+		<!--Carrusel -->
+		<section>
+			<Carrusel/>
+		</section>
+
+		
+		<!--Tarjetas-->
+		<section class="flex flex-wrap justify-center text-center ">
+			<!--Quines somos -->
+			<Secciones 
+			nombre="Quienes Somos" 
+			url= {bgImg}
+			enlace = "/quienes"
+			colorTitle ="bg-indigo-600"
+			colorTriangle = "bg-indigo-800"
+			/>
+			<!--Consejeros 2019-2021 -->
+			<Secciones 
+			nombre="Consejeros 2019-2021"
+			url= {bgImg2} 
+			enlace = "/consejeros"
+			colorTitle ="bg-green-800"
+			colorTriangle = "bg-green-700"
+			/>
+			<!--Acuerdos -->
+			<Secciones 
+			nombre="Acuerdos"
+			url= {bgImg3} 
+			enlace = "/quienes"
+			colorTitle ="bg-blue-600"
+			colorTriangle = "bg-blue-800"
+			/>
+			<!--Convocatorias -->
+			<Secciones 
+			nombre="Convocatorias"
+			url= {bgImg4}
+			enlace = "/convocatorias" 
+			colorTitle ="bg-rose-600"
+			colorTriangle = "bg-rose-800"
+			/>
+			<!--Sistemas para responsables TIC -->
+			<Secciones 
+			nombre="Sistemas para responsables TIC"
+			url= {bgImg5} 
+			enlace = "/sistemastic"
+			colorTitle ="bg-orange-600"
+			colorTriangle = "bg-orange-800"
+			/>
+			<!--Normatividad -->
+			<Secciones 
+			nombre="Normatividad"
+			url= {bgImg6}
+			enlace = "/normatividad" 
+			colorTitle ="bg-green-700"
+			colorTriangle = "bg-green-800"
+			/> 
+		</section>
+
+		<!--Patrocinadores -->
+		<div class="flex flex-col sm:flex-row justify-center items-center gap-10 my-10">
+            <a href="https://www.red-tic.unam.mx/normatic" target="_blank" class="text-sm underline font-bold pr-3 pl-3"><img src={escNORMATECA} class="grayscale hover:filter-none transition-all" width="190" alt="NORMATECA TIC"></a>
+          
+            <a href="https://www.red-tic.unam.mx/" target="_blank" class="text-sm underline font-bold pr-3 pl-3"><img src={escREDTIC} class="grayscale hover:filter-none transition-all" width="120" alt="REDTIC"></a>
+       
+            <a href="https://www.tic.unam.mx/servicios-de-tic/" target="_blank" class="text-sm underline font-bold pr-3 pl-3"><img src={escDGTIC} class="grayscale hover:filter-none transition-all" width="190" alt="DGTIC"></a>
+         
+            <a href="https://www.proveeduria.unam.mx/app.dgpr/marco/" target="_blank" class="text-sm underline font-bold pr-3 pl-3"><img src={escDGPr} class="grayscale hover:filter-none transition-all" width="120" alt="DGPr"></a>
+        </div>
+	</main>
+
+
+
+</Layout>

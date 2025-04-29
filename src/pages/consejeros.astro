@@ -1,0 +1,48 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CardQ from '../components/cardQ.astro';
+
+//importar imagenes
+import bgImage from '../assets/quienes.webp';
+import bgImage1 from '../assets/unamCard2.webp';
+---
+
+<Layout title='Consejeros | CATIC'>
+
+    <main class="mb-14">
+        <h1 class="text-4xl font-normal text-center  mt-5 md:mt-10">Consejeros 2019-2021</h1>
+        <div class="flex flex-col justify-center items-center mt-9">
+            <CardQ image1={bgImage1} image2={bgImage}/>
+
+            <div class="mt-10 mx-4 md:mx-0">
+                <h5 class="text-xl mb-2">Secretario Técnico del Consejo</h5>
+
+                <p class="mb-6">Dr. Héctor Benítez Pérez,<br>Director General de Cómputo y de Tecnologías de Información y Comunicación. </p>
+
+                <h5 class="text-xl mb-2">Consejeros</h5>
+                <h6 class="font-bold">Por el Sistema de Bachillerato:</h6>
+                <p class="mb-4">Ing. Armando Rodríguez Arguijo, Dirección General del CCH. </p>
+
+                <h6 class="font-bold">Por Escuelas Nacionales y Facultades en Ciudad Universitaria:</h6>
+                <p class="mb-4">Mtro. Rodolfo Romero Flores, Facultad de Derecho.</p>
+
+                <h6 class="font-bold">Por Facultades de Estudios Superiores:</h6>
+                <p class="mb-4">Vacante</p>
+
+                <h6 class="font-bold">Por Campi universitarios foráneos:</h6>
+                <p class="mb-4">Dr. Heberto Ferreira Medina, Instituto de Investigaciones en Ecosistemas y Sustentabilidad. </p>
+
+                <h6 class="font-bold">Por Institutos y Centros de Investigación:</h6>
+                <p class="mb-4">Vacante</p>
+
+                <h6 class="font-bold">Por Dependencias Administrativas:</h6>
+                <p class="mb-4">Vacante</p>
+
+                <h6 class="font-bold">Vocales representantes expertos de entidades externas: </h6>
+                <p class="mb-4">Dra. Alejandra Herrera Mendoza y Dr. Carlos Zozaya Gorostiza.</p>
+
+            </div>
+        </div>
+    </main>
+
+</Layout>

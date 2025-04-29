@@ -1,0 +1,57 @@
+---
+import bgImageR24 from "../assets/bnr_resultados24.webp";
+import bgImage0 from "../assets/bannerPrincipios.webp";
+import conv25 from "../assets/bnr_conv25.jpg";
+import cata25 from "../assets/bnr_catalogo25.jpg";
+
+---
+
+
+
+<div class="relative w-full max-w-6xl mx-auto overflow-hidden mt-4" id="carousel">
+    <div class="flex transition-transform duration-500" id="carousel-slides">
+      <!-- Slide 1 -->
+      <div class=" relative w-full flex-shrink-0">
+        <img src={bgImageR24} class="w-full" alt="Slide 1">
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black/50">
+            <h2 class="text-2xl font-bold">Proceso de alta</h2>
+            <p class="text-lg">Haz click aquí para conocer los detalles</p>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+     <div class="relative w-full flex-shrink-0">
+        <img src={bgImage0} class="w-full" alt="Slide 2">
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black/50">
+            <h2 class="text-2xl font-bold">Principios de software libre y código abierto en al UNAM</h2>
+            <p class="text-lg">Haz click aquí para conocer los detalles</p>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="relative w-full flex-shrink-0">
+        <img src={conv25} class="w-full" alt="Slide 3">
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black/50">
+            <h2 class="text-2xl font-bold">Convocatoria 2025 para la asignación de equipos de cómputo</h2>
+            <p class="text-lg">Haz click aquí para conocer los detalles</p>
+        </div>
+      </div>
+
+    </div>
+  
+    <!-- Botones de navegación -->
+    <button id="prevBtn" class="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 bg-white hover:bg-gray-300 text-gray-800 hover:text-blue-600 rounded-full p-2 md:p-3 shadow-md md:shadow-lg transition-all duration-200">
+        &larr;
+    </button>
+    <button id="nextBtn" class="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 bg-white hover:bg-gray-300 text-gray-800 hover:text-blue-600 rounded-full p-2 md:p-3 shadow-md md:shadow-lg transition-all duration-200">
+        &rarr;
+    </button>
+  </div>
+  	  
+
+ <script>
+    
+    import { initCarrusel } from '../scripts/carrusel';
+    initCarrusel();
+
+ </script>
