@@ -1,7 +1,7 @@
 /* empty css                         */import { c as createAstro, a as createComponent, r as renderTemplate, m as maybeRenderHead, b as addAttribute, d as renderComponent } from '../astro.067e9727.mjs';
 import 'html-escaper';
-import { $ as $$Layout } from './censo22.astro.0d45ef3f.mjs';
-import { b as bgImage } from './consejeros.astro.92aa06c2.mjs';
+import { $ as $$Layout } from './censo22.astro.9645f114.mjs';
+import { b as bgImage } from './consejeros.astro.afcf084b.mjs';
 /* empty css                             */
 const $$Astro$3 = createAstro();
 const $$Tarjeta = createComponent(async ($$result, $$props, $$slots) => {
@@ -42,18 +42,20 @@ const bgImageR24 = "/_astro/bnr_resultados24.54bb16d6.webp";
 
 const bgImage0 = "/_astro/bannerPrincipios.2d5c7d33.webp";
 
+const conv25 = "/_astro/bnr_conv25.afc4e305.jpg";
+
 const cata25 = "/_astro/bnr_catalogo25.351560bd.jpg";
 
 const $$Astro$2 = createAstro();
 const $$Slides = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$2, $$props, $$slots);
   Astro2.self = $$Slides;
-  const { titulo, texto, fondo, imagen } = Astro2.props;
-  return renderTemplate`${maybeRenderHead($$result)}<div class=" relative w-full flex-shrink-0">
-        <img${addAttribute(imagen, "src")} class="w-full" alt="Slide 1">
+  const { titulo, texto, fondo, imagen, enlace } = Astro2.props;
+  return renderTemplate`${maybeRenderHead($$result)}<div class=" relative w-full flex-shrink-0 ">
+        <img${addAttribute(imagen, "src")} class="w-full " alt="Slide 1">
         <div${addAttribute(`absolute inset-0 flex flex-col items-center justify-center text-white ${fondo}`, "class")}>
-            <h2 class="text-5xl font-bold text-center">${titulo}</h2>
-            <p class="text-lg">${texto}</p>
+            <h2 class="text-5xl font-bold text-center p-4">${titulo}</h2>
+            <p class="text-lg cursor-pointer hover:text-gray-300"><a${addAttribute(enlace, "href")}>${texto}</a></p>
         </div>
     </div>`;
 }, "/Users/diego/Documents/CATIC-DIEGO/CATIC/src/components/Slides.astro");
@@ -65,11 +67,13 @@ const $$Carrusel = createComponent(async ($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead($$result)}<div class="relative w-full max-w-6xl mx-auto overflow-hidden mt-4" id="carousel">
   <div class="flex transition-transform duration-500" id="carousel-slides">
     <!--Slide 1 -->
-    ${renderComponent($$result, "Slides", $$Slides, { "titulo": "Proceso de alta", "fondo": "bg-rose-600/60", "texto": "Haz click aqu\xED para conocer los detalles", "imagen": bgImageR24 })}
+    ${renderComponent($$result, "Slides", $$Slides, { "titulo": "Proceso de alta de equipos", "fondo": "bg-rose-600/60", "texto": "Haz click aqu\xED para conocer los detalles", "imagen": bgImageR24, "enlace": "../../public/docs/Proceso_de_registro_de_alta_a_reserva_2024.pdf" })}
     <!--Slide 2 -->
-    ${renderComponent($$result, "Slides", $$Slides, { "titulo": "Principios de software libre y c\xF3digo abierto en al UNAM", "fondo": "bg-indigo-600/60", "texto": "Haz click aqu\xED para conocer los detalles", "imagen": bgImage0 })}
+    ${renderComponent($$result, "Slides", $$Slides, { "titulo": "Principios del software libre y c\xF3digo abierto en al UNAM", "fondo": "bg-indigo-600/60", "enlace": "", "texto": "Haz click aqu\xED para conocer los detalles", "imagen": bgImage0 })}
     <!--Slide 3 -->
-    ${renderComponent($$result, "Slides", $$Slides, { "titulo": "Convocatoria 2025 para la asignaci\xF3n de equipos de c\xF3mputo", "fondo": "bg-green-600/60", "texto": "Haz click aqu\xED para conocer los detalles", "imagen": cata25 })}
+    ${renderComponent($$result, "Slides", $$Slides, { "titulo": "Cat\xE1logo base para equipo de c\xF3mputo y perif\xE9ricos  ", "fondo": "bg-green-600/60", "enlace": "../../public/docs/CatalogoBase-2025-180325.pdf", "texto": "Haz click aqu\xED para conocer los detalles", "imagen": cata25 })}
+
+    ${renderComponent($$result, "Slides", $$Slides, { "titulo": "Convocatoria 2025 para la asignaci\xF3n de equipos de c\xF3mputo", "fondo": "bg-purple-600/60", "enlace": "../../public/docs/catic_convocatoria_2025.pdf", "texto": "Haz click aqu\xED para conocer los detalles", "imagen": conv25 })}
   </div> 
 
   <!--Botones -->
@@ -100,11 +104,11 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 		<!--Tarjetas-->
 		<section class="flex flex-wrap justify-center text-center  ">
 			<!--Quines somos -->
-			${renderComponent($$result2, "Tarjeta", $$Tarjeta, { "nombre": "Quienes Somos", "url": bgImage, "enlace": "/quienes", "colorTitle": "bg-indigo-600", "colorTriangle": "bg-indigo-800" })}
+			${renderComponent($$result2, "Tarjeta", $$Tarjeta, { "nombre": "Quienes Somos", "url": bgImage, "enlace": "/quienesSomos", "colorTitle": "bg-indigo-600", "colorTriangle": "bg-indigo-800" })}
 			<!--Consejeros 2019-2021 -->
 			${renderComponent($$result2, "Tarjeta", $$Tarjeta, { "nombre": "Consejeros 2019-2021", "url": bgImg2, "enlace": "/consejeros", "colorTitle": "bg-green-800", "colorTriangle": "bg-green-700" })}
 			<!--Acuerdos -->
-			${renderComponent($$result2, "Tarjeta", $$Tarjeta, { "nombre": "Acuerdos", "url": bgImg3, "enlace": "/quienes", "colorTitle": "bg-blue-600", "colorTriangle": "bg-blue-800" })}
+			${renderComponent($$result2, "Tarjeta", $$Tarjeta, { "nombre": "Acuerdos", "url": bgImg3, "enlace": "/quienesSomos", "colorTitle": "bg-blue-600", "colorTriangle": "bg-blue-800" })}
 			<div class="w-full hidden lg:block">
 
 			</div>

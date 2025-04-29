@@ -1,6 +1,6 @@
 /* empty css                         */import { c as createAstro, a as createComponent, r as renderTemplate, m as maybeRenderHead, b as addAttribute, f as renderSlot, d as renderComponent } from '../astro.067e9727.mjs';
 import 'html-escaper';
-import { $ as $$Layout } from './censo22.astro.0d45ef3f.mjs';
+import { $ as $$Layout } from './censo22.astro.9645f114.mjs';
 
 const $$Astro$1 = createAstro();
 const $$CardCv = createComponent(async ($$result, $$props, $$slots) => {

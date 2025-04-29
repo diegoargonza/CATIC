@@ -1,7 +1,7 @@
 /* empty css                         */import { c as createAstro, a as createComponent, r as renderTemplate, d as renderComponent, m as maybeRenderHead } from '../astro.067e9727.mjs';
 import 'html-escaper';
-import { $ as $$Layout } from './censo22.astro.0d45ef3f.mjs';
-import { $ as $$CardCv } from './convocatorias.astro.4455d283.mjs';
+import { $ as $$Layout } from './censo22.astro.9645f114.mjs';
+import { $ as $$CardCv } from './convocatorias.astro.d6aa0204.mjs';
 /* empty css                             */
 const $$Astro = createAstro();
 const $$Sistemastic = createComponent(async ($$result, $$props, $$slots) => {

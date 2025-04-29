@@ -1,11 +1,11 @@
 /* empty css                         */import { c as createAstro, a as createComponent, r as renderTemplate, d as renderComponent, m as maybeRenderHead } from '../astro.067e9727.mjs';
 import 'html-escaper';
-import { $ as $$Layout } from './censo22.astro.0d45ef3f.mjs';
+import { $ as $$Layout } from './censo22.astro.9645f114.mjs';
 /* empty css                             */
 const $$Astro = createAstro();
-const $$Quienes = createComponent(async ($$result, $$props, $$slots) => {
+const $$QuienesSomos = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
-  Astro2.self = $$Quienes;
+  Astro2.self = $$QuienesSomos;
   return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Qui\xE9nes somos | CATIC" }, { "default": ($$result2) => renderTemplate`
 
     ${maybeRenderHead($$result2)}<main class="mb-16">
@@ -67,9 +67,9 @@ const $$Quienes = createComponent(async ($$result, $$props, $$slots) => {
     </main>
 
 ` })}`;
-}, "/Users/diego/Documents/CATIC-DIEGO/CATIC/src/pages/quienes.astro");
+}, "/Users/diego/Documents/CATIC-DIEGO/CATIC/src/pages/quienesSomos.astro");
 
-const $$file = "/Users/diego/Documents/CATIC-DIEGO/CATIC/src/pages/quienes.astro";
-const $$url = "/quienes";
+const $$file = "/Users/diego/Documents/CATIC-DIEGO/CATIC/src/pages/quienesSomos.astro";
+const $$url = "/quienesSomos";
 
-export { $$Quienes as default, $$file as file, $$url as url };
+export { $$QuienesSomos as default, $$file as file, $$url as url };

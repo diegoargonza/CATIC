@@ -1,6 +1,6 @@
 /* empty css                         */import { c as createAstro, a as createComponent, r as renderTemplate, d as renderComponent, m as maybeRenderHead, b as addAttribute } from '../astro.067e9727.mjs';
 import 'html-escaper';
-import { $ as $$Layout } from './censo22.astro.0d45ef3f.mjs';
+import { $ as $$Layout } from './censo22.astro.9645f114.mjs';
 /* empty css                             */
 const bgDoc1 = "/_astro/catic_convocatoria_2021.10222e44.pdf";
 
