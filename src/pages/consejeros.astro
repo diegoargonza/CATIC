@@ -1,18 +1,21 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import CardQ from '../components/cardQ.astro';
+
 
 //importar imagenes
-import bgImage from '../assets/quienes.webp';
-import bgImage1 from '../assets/unamCard2.webp';
+import bgImage1 from '/assets/unamCard2.webp';
 ---
 
 <Layout title='Consejeros | CATIC'>
 
     <main class="mb-14">
+        
         <h1 class="text-4xl font-normal text-center  mt-5 md:mt-10">Consejeros 2019-2021</h1>
         <div class="flex flex-col justify-center items-center mt-9">
-            <CardQ image1={bgImage1} image2={bgImage}/>
+            <!-- <CardQ image1={bgImage1} />  -->
+             <div class="rounded-md shadow-lg shadow-gray-500">
+                 <img src={bgImage1} class="w-[500px] rounded-md ">
+             </div>
 
             <div class="mt-10 mx-4 md:mx-0">
                 <h5 class="text-xl mb-2 font-bold">Secretario Técnico del Consejo</h5>

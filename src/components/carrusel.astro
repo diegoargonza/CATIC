@@ -1,9 +1,9 @@
 ---
 //Imagenes para carrusel 
-import bgImageR24 from "../assets/bnr_resultados24.webp";
-import bgImage0 from "../assets/bannerPrincipios.webp";
-import conv25 from "../assets/bnr_conv25.jpg";
-import cata25 from "../assets/bnr_catalogo25.jpg";
+import bgImageR24 from "/assets/bnr_resultados24.webp";
+import bgImage0 from "/assets/bannerPrincipios.webp";
+import conv25 from "/assets/bnr_conv25.jpg";
+import cata25 from "/assets/bnr_catalogo25.jpg";
 import Slides from "./Slides.astro";
 
 ---
@@ -16,11 +16,11 @@ import Slides from "./Slides.astro";
       fondo = "bg-rose-600/60"
       texto = "Haz click aquí para conocer los detalles"
       imagen={bgImageR24}
-      enlace="docs/Proceso_de_registro_de_alta_a_reserva_2024.pdf"
+      enlace="/docs/Proceso_de_registro_de_alta_a_reserva_2024.pdf"
     />
     <!--Slide 2 -->
     <Slides
-      titulo = "Principios del software libre y código abierto en al UNAM"
+      titulo = "Principios del software libre y código abierto en la UNAM"
       fondo = "bg-indigo-600/60"
       enlace=""
       texto = "Haz click aquí para conocer los detalles"
@@ -30,7 +30,7 @@ import Slides from "./Slides.astro";
     <Slides
       titulo = "Catálogo base para equipo de cómputo y periféricos  "
       fondo = "bg-green-600/60"
-      enlace="docs/CatalogoBase-2025-180325.pdf"
+      enlace="/docs/CatalogoBase-2025-180325.pdf"
       texto = "Haz click aquí para conocer los detalles"
       imagen={cata25}
     />
@@ -38,7 +38,7 @@ import Slides from "./Slides.astro";
     <Slides
       titulo = "Convocatoria 2025 para la asignación de equipos de cómputo"
       fondo = "bg-purple-600/60"
-      enlace="docs/catic_convocatoria_2025.pdf"
+      enlace="/docs/catic_convocatoria_2025.pdf"
       texto = "Haz click aquí para conocer los detalles"
       imagen={conv25}
     />
