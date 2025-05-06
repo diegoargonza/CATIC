@@ -13,11 +13,11 @@ const {nombre, url,  colorTitle, colorTriangle, enlace} = Astro.props;
 ---
 
 <section class ="w-[400px] ">
-    <div class="card transition-transform duration-300 ease-in-out hover:scale-110 ">
+    <div class="card  ">
        <a href={enlace}>
         <div class="card-img ">
             <div class={`triangle ${colorTriangle} to-50% `}></div>
-            <img src={url} alt="" class="col-span-10 hover:cursor-pointer " />
+            <img src={url} alt="" class="col-span-10 hover:cursor-pointer w-[500px] h-[300px] " />
         </div>
         <div class={`title ${colorTitle}`}>{nombre} </div>
     </div>
