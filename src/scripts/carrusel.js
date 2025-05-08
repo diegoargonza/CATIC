@@ -8,13 +8,13 @@ export function initCarrusel(){
 
   function updateCarousel() {
     const offset = -currentIndex * 100;
-   slidesContainer.style.transform = `translateX(${offset}%)`;
+    slidesContainer.style.transform = `translateX(${offset}%)`;
 
-    for(var i = 0; i<totalSlides; i++){
-      var noSelect = document.getElementById(i)
-      noSelect.style.backgroundColor = "#EAEAEA"
-      console.log(i)        
-    }
+  for(var i = 0; i<totalSlides; i++){
+    var noSelect = document.getElementById(i)
+    noSelect.style.backgroundColor = "#EAEAEA"
+    console.log(i)        
+  }
 
 
     var elegida = document.getElementById(currentIndex)
@@ -32,24 +32,22 @@ export function initCarrusel(){
   });
 
 
+//Creación de botones 
 
 
-  document.getElementById('0').addEventListener('click', () => {
-    currentIndex = (0) % totalSlides;
+
+//Ciclo para la paginación 
+
+for(let numero = 0; numero < totalSlides; numero++ ){
+  document.getElementById(numero).addEventListener('click', () => {
+    currentIndex = (numero) % totalSlides;
     updateCarousel();
-  });
-  document.getElementById('1').addEventListener('click', () => {
-    currentIndex = (1) % totalSlides;
-    updateCarousel();
-  });
-  document.getElementById('2').addEventListener('click', () => {
-    currentIndex = (2) % totalSlides;
-    updateCarousel();
-  });
-  document.getElementById('3').addEventListener('click', () => {
-    currentIndex = (3) % totalSlides;
-    updateCarousel();
-  });
+  }); 
+
+}
+
+
+
 
 
 }

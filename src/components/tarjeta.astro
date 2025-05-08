@@ -12,12 +12,12 @@ interface Props {
 const {nombre, url,  colorTitle, colorTriangle, enlace} = Astro.props;
 ---
 
-<section class ="w-[400px] ">
+<section class ="w-[400px] h-[400px]  ">
     <div class="card  ">
        <a href={enlace}>
         <div class="card-img ">
             <div class={`triangle ${colorTriangle} to-50% `}></div>
-            <img src={url} alt="" class="col-span-10 hover:cursor-pointer w-[500px] h-[300px] " />
+            <img src={url} alt="" class="col-span-10 hover:cursor-pointer w-[400px] h-[300px] " />
         </div>
         <div class={`title ${colorTitle}`}>{nombre} </div>
     </div>
