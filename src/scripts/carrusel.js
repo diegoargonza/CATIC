@@ -32,22 +32,24 @@ export function initCarrusel(){
   });
 
 
-//Creación de botones 
+  //Creación de botones 
+  var crearBoton = document.getElementById('paginadores');
 
 
 
-//Ciclo para la paginación 
+  for(let i = 0; i < totalSlides; i ++){
+    const boton = document.createElement('button');
+    boton.id = i;
+    boton.className = "bg-gray-100 border border-gray-700 w-3 h-3 rounded-full"
+    
+    boton.addEventListener('click', () =>{
+      currentIndex = (i) % totalSlides;
+      updateCarousel();
+    });
 
-for(let numero = 0; numero < totalSlides; numero++ ){
-  document.getElementById(numero).addEventListener('click', () => {
-    currentIndex = (numero) % totalSlides;
-    updateCarousel();
-  }); 
-
-}
-
-
-
+    crearBoton.appendChild(boton);
+  }
+ 
 
 
 }
