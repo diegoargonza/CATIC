@@ -16,7 +16,6 @@ export function initCarrusel(){
     console.log(i)        
   }
 
-
     var elegida = document.getElementById(currentIndex)
     elegida.style.backgroundColor = `#B7DDFA`;
   }
@@ -34,9 +33,7 @@ export function initCarrusel(){
 
   //Creación de botones 
   var crearBoton = document.getElementById('paginadores');
-
-
-
+  
   for(let i = 0; i < totalSlides; i ++){
     const boton = document.createElement('button');
     boton.id = i;
@@ -48,7 +45,31 @@ export function initCarrusel(){
     });
 
     crearBoton.appendChild(boton);
+
   }
+
+
+  // Movimiento automático cada 3 segundos
+    //setInterval(() => {
+      //currentIndex = (currentIndex + 1) % totalSlides;
+      //updateCarousel();
+    //}, 4000); // 3000 milisegundos = 3 segundos
+
+    
+    let autoSlide = setInterval(() => {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      updateCarousel();
+    }, 8000);
+    
+    slidesContainer.addEventListener('mouseenter', () => clearInterval(autoSlide));
+    slidesContainer.addEventListener('mouseleave', () => {
+      autoSlide = setInterval(() => {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateCarousel();
+      }, 8000);
+    });
+    
+
  
 
 
