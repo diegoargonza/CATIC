@@ -1,74 +1,69 @@
 ---
 //Imagenes para carrusel 
-import bgImageR24 from "/assets/bnr_resultados24.webp";
-import bgImage0 from "/assets/bannerPrincipios.webp";
-import conv25 from "/assets/bnr_conv25.jpg";
-import cata25 from "/assets/bnr_catalogo25.jpg";
+import bgCatalogo from "/assets/bnrBG_catalogos.png";
+import bgDocs from "/assets/bnrBG_docs.png";
+import bgConv from "/assets/bnrBG_conv.png";
+import bgResul from "/assets/bnrBG_resultados.png";
+import bgProceso from "/assets/bnrBG_proceso.png";
+
 import Slides from "./Slides.astro";
 
 ---
 
 
-<div class="relative w-full max-w-6xl mx-auto overflow-hidden mt-4" id="carousel">
+<div class="relative w-full max-w-6xl mx-auto overflow-hidden" id="carousel">
   <div class="flex transition-transform duration-500 " id="carousel-slides">
     <!--Slide 1 -->
     <Slides
-      titulo = "Proceso de alta de equipos"
-      fondo = "bg-rose-600/60"
+      titulo = "Proceso de alta de equipos Proceso de alta de equipos Proceso de alta de equipos"
+      matiz = "bg-proceso/70"
       texto = "Haz click aquí para conocer los detalles"
-      imagen={bgImageR24}
+      imagen={bgProceso}
       enlace="/docs/Proceso_de_registro_de_alta_a_reserva_2024.pdf"
     />
     <!--Slide 2 -->
     <Slides
       titulo = "Principios del software libre y código abierto en la UNAM"
-      fondo = "bg-indigo-600/60"
+      matiz = "bg-docs/80"
       enlace="https://www.red-tic.unam.mx/recursos/2024/2024_Principios_SWLibre.pdf"
       texto = "Haz click aquí para conocer los detalles"
-      imagen={bgImage0}
+      imagen={bgDocs}
     />
     <!--Slide 3 -->
     <Slides
       titulo = "Catálogo base para equipo de cómputo y periféricos  "
-      fondo = "bg-green-600/60"
+      matiz = "bg-catalogo/60"
       enlace="/docs/CatalogoBase-2025-180325.pdf"
       texto = "Haz click aquí para conocer los detalles"
-      imagen={cata25}
+      imagen={bgCatalogo}
     />
 
     <Slides
       titulo = "Convocatoria 2025 para la asignación de equipos de cómputo"
-      fondo = "bg-purple-600/60"
+      matiz = "bg-convocatoria/60"
       enlace="/docs/catic_convocatoria_2025.pdf"
       texto = "Haz click aquí para conocer los detalles"
-      imagen={conv25}
+      imagen={bgConv}
     />
 
     <Slides
-      titulo = "Elemento 5"
-      fondo = "bg-purple-600/60"
+      titulo = "Resultados de asignacion 2024"
+      matiz = "bg-resultados/70"
       enlace="/docs/catic_convocatoria_2025.pdf"
       texto = "Haz click aquí para conocer los detalles"
-      imagen={conv25}
+      imagen={bgResul}
     />
 
-    <Slides
-      titulo = "Elemento 6"
-      fondo = "bg-red-600/60"
-      enlace="/docs/catic_convocatoria_2025.pdf"
-      texto = "Haz click aquí para conocer los detalles"
-      imagen={conv25}
-    />
 
   </div> 
 
 
   <!--Botones -->
 
-  <button id="prevBtn" class="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 bg-white hover:bg-gray-300 text-gray-800 hover:text-blue-700 rounded-full p-2 md:p-3 shadow-md md:shadow-lg transition-all duration-500">
+  <button id="prevBtn" class="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 bg-white hover:bg-gray-300 text-gray-800 hover:text-blue-700 rounded-full w-10 h-10  shadow-md md:shadow-lg transition-all duration-500">
       &larr;
   </button>
-  <button id="nextBtn" class="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 bg-white hover:bg-gray-300 text-gray-800 hover:text-blue-700 rounded-full p-2 md:p-3 shadow-md md:shadow-lg transition-all duration-500">
+  <button id="nextBtn" class="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 bg-white hover:bg-gray-300 text-gray-800 hover:text-blue-700 rounded-full w-10 h-10 shadow-md md:shadow-lg transition-all duration-500">
       &rarr;
   </button>
 
@@ -76,17 +71,8 @@ import Slides from "./Slides.astro";
 </div>
 
 <!--paginación  -->
-
-
 <div class="flex justify-center gap-4 mt-5" id="paginadores">
-<!--
-  <button id="0" class="bg-gray-100 border border-gray-700 w-3 h-3 rounded-full"></button>
-  <button id="1" class="bg-gray-100 border border-gray-700 w-3 h-3 rounded-full" ></button>
-  <button id="2" class="bg-gray-100 border border-gray-700 w-3 h-3 rounded-full"></button>
-  <button id="3" class="bg-gray-100 border border-gray-700 w-3 h-3 rounded-full"></button>
-  <button id="4" class="bg-gray-100 border border-gray-700 w-3 h-3 rounded-full"></button>
 
-   -->
 </div>
 
 

@@ -148,6 +148,12 @@ module.exports = {
 					'900': '#125967',
 					'950': '#053b47',
 				},
+				'proceso': '#b40050',
+				'docs': '#3e3a93',
+				'catalogo': '#17631a',
+				'convocatoria': '#461f89', 
+				'resultados': '#bf7b31',
+
 			},
 		},
 	},

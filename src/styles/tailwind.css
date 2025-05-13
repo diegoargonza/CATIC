@@ -11,7 +11,7 @@
     table tbody td:last-child{  @apply border-l-0 }
 
 
-    .card{ @apply m-10 flex w-80 flex-col}
+    .card{ @apply flex w-80 flex-col}
     .card-img{ @apply grid grid-cols-12}
     .triangle{ @apply w-[50px] h-[50px] self-end bg-gradient-to-br from-white from-0% via-white via-50%  bg-rose-800 to-50% }
     .title{ @apply bg-rose-500 px-3 py-4 text-lg font-semibold text-white rounded-bl-md rounded-tr-md }
