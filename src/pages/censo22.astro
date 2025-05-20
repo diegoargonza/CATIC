@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+const fecha = new Date().getFullYear();
+
 ---
 <Layout title="Censo de cómputo 2022 | CATIC">
 
@@ -12,13 +14,13 @@ import Layout from '../layouts/Layout.astro';
                     <p class="text-justify mb-8 ">
                         El Consejo Asesor en Tecnologías de Información y Comunicación (CATIC) de la UNAM agradece a las entidades 
                         y dependencias que participaron en el Censo de Cómputo por los datos proporcionados, que permitirá ampliar 
-                        las configuraciones de equipos ofertadas en la convocatoria 2023 y tomarlos en cuenta en la distribución de 
+                        las configuraciones de equipos ofertadas en la convocatoria {fecha} y tomarlos en cuenta en la distribución de 
                         los recursos de cómputo con base en las necesidades expresadas.
                     </p>
                 
                     <p class="text-center font-bold mt-4 mb-4">ATENTAMENTE: </p>
                     <p class="text-center"><i>“POR MI RAZA HABLARÁ EL ESPÍRITU”</i></p>
-                    <p class="text-center">Cd. Universitaria, Cd. Mx., 3 de marzo de 2023.</p>
+                    <p class="text-center">Cd. Universitaria, Cd. Mx., 3 de marzo de {fecha}</p>
                     <p class="text-center font-bold mb-4"> CONSEJO ASESOR EN TECNOLOGÍAS DE INFORMACIÓN Y COMUNICACIÓN</p>
                     
                 </div>
