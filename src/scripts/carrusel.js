@@ -13,7 +13,6 @@ export function initCarrusel(){
   for(var i = 0; i<totalSlides; i++){
     var noSelect = document.getElementById(i)
     noSelect.style.backgroundColor = "#EAEAEA"
-    console.log(i)        
   }
 
     var elegida = document.getElementById(currentIndex)
@@ -47,13 +46,6 @@ export function initCarrusel(){
     crearBoton.appendChild(boton);
 
   }
-
-
-  // Movimiento automático cada 3 segundos
-    //setInterval(() => {
-      //currentIndex = (currentIndex + 1) % totalSlides;
-      //updateCarousel();
-    //}, 4000); // 3000 milisegundos = 3 segundos
 
     
     let autoSlide = setInterval(() => {

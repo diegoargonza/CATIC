@@ -2,6 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/cardCv.astro';
 
+const fecha = new Date().getFullYear();
+
 ---
 
 <Layout title='Convocatorias | CATIC'>
@@ -91,7 +93,7 @@ import Card from '../components/cardCv.astro';
                 <p class="text-center">Estamos atentos a dudas y comentarios en la cuenta de correo electrónico:<a href="mailto:catic@comunidad.unam.mx" class="text-venice-blue-600"> catic@unam.mx</a></p>
             </div>
             <div>
-                <p class="text-center">Cd. Universitaria, Cd. Mx., 14 de agosto de 2024.</p>
+                <p class="text-center">Cd. Universitaria, Cd. Mx., 14 de agosto de {fecha}</p>
             </div>
         </div>
     
