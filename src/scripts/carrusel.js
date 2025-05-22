@@ -63,7 +63,7 @@ export function initCarrusel(){
     
 
  
-
+      updateCarousel();
 
 }
 
