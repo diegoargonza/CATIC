@@ -37,6 +37,8 @@ export function initCarrusel(){
     const boton = document.createElement('button');
     boton.id = i;
     boton.className = "bg-gray-100 border border-gray-700 w-3 h-3 rounded-full"
+    boton.setAttribute('aria-label', 'Recurso-' + (i + 1));
+ 
     
     boton.addEventListener('click', () =>{
       currentIndex = (i) % totalSlides;
@@ -47,19 +49,13 @@ export function initCarrusel(){
 
   }
 
-    
+    //carrusel automático 
     let autoSlide = setInterval(() => {
       currentIndex = (currentIndex + 1) % totalSlides;
       updateCarousel();
     }, 8000);
     
-    slidesContainer.addEventListener('mouseenter', () => clearInterval(autoSlide));
-    slidesContainer.addEventListener('mouseleave', () => {
-      autoSlide = setInterval(() => {
-        currentIndex = (currentIndex + 1) % totalSlides;
-        updateCarousel();
-      }, 8000);
-    });
+    
     
 
  
