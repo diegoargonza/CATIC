@@ -1,7 +1,156 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
+@plugin 'flowbite/plugin';
+
+@source '../../node_modules/flowbite/**/*.js';
+
+@theme {
+  --breakpoint-xs: 410px;
+
+  --color-venice-blue-50: #f1f8fe;
+  --color-venice-blue-100: #e1f0fd;
+  --color-venice-blue-200: #bce1fb;
+  --color-venice-blue-300: #81c9f8;
+  --color-venice-blue-400: #3faff1;
+  --color-venice-blue-500: #1695e1;
+  --color-venice-blue-600: #0976c0;
+  --color-venice-blue-700: #085e9c;
+  --color-venice-blue-800: #0b4e7d;
+  --color-venice-blue-900: #0f436b;
+  --color-venice-blue-950: #0a2b47;
+
+  --color-ath-gray-50: #f8f9fa;
+  --color-ath-gray-100: #eceff2;
+  --color-ath-gray-200: #d6dce1;
+  --color-ath-gray-300: #b2bec7;
+  --color-ath-gray-400: #889ba8;
+  --color-ath-gray-500: #697e8e;
+  --color-ath-gray-600: #546775;
+  --color-ath-gray-700: #45535f;
+  --color-ath-gray-800: #3c4750;
+  --color-ath-gray-900: #353d45;
+  --color-ath-gray-950: #23292e;
+
+  --color-green-50: #e8ffe4;
+  --color-green-100: #caffc4;
+  --color-green-200: #9aff90;
+  --color-green-300: #59ff50;
+  --color-green-400: #21fe1d;
+  --color-green-500: #00e502;
+  --color-green-600: #00b807;
+  --color-green-700: #008505;
+  --color-green-800: #076d0c;
+  --color-green-900: #0b5c10;
+  --color-green-950: #003406;
+
+  --color-azure-50: #edfaff;
+  --color-azure-100: #d6f2ff;
+  --color-azure-200: #b5eaff;
+  --color-azure-300: #83dfff;
+  --color-azure-400: #48cbff;
+  --color-azure-500: #1eadff;
+  --color-azure-600: #068fff;
+  --color-azure-700: #007bff;
+  --color-azure-800: #085ec5;
+  --color-azure-900: #0d519b;
+  --color-azure-950: #0e315d;
+
+  --color-amethy-50: #fcf5fe;
+  --color-amethy-100: #f8eafd;
+  --color-amethy-200: #f0d4fa;
+  --color-amethy-300: #e8b3f4;
+  --color-amethy-400: #da85ed;
+  --color-amethy-500: #c656df;
+  --color-amethy-600: #b646cb;
+  --color-amethy-700: #902aa1;
+  --color-amethy-800: #772484;
+  --color-amethy-900: #64236c;
+  --color-amethy-950: #410b47;
+
+  --color-mint-50: #f1f8fe;
+  --color-mint-100: #e1effd;
+  --color-mint-200: #bddefa;
+  --color-mint-300: #82c4f7;
+  --color-mint-400: #40a7f0;
+  --color-mint-500: #178be0;
+  --color-mint-600: #0b75cb;
+  --color-mint-700: #0a579a;
+  --color-mint-800: #0c4a80;
+  --color-mint-900: #103f6a;
+  --color-mint-950: #0b2846;
+
+  --color-mountain-50: #ecfdf6;
+  --color-mountain-100: #d2f9e7;
+  --color-mountain-200: #a9f1d4;
+  --color-mountain-300: #71e4bc;
+  --color-mountain-400: #38cfa0;
+  --color-mountain-500: #14b085;
+  --color-mountain-600: #099270;
+  --color-mountain-700: #07755c;
+  --color-mountain-800: #085d4a;
+  --color-mountain-900: #084c3e;
+  --color-mountain-950: #032b23;
+
+  --color-marino-50: #f2f5fc;
+  --color-marino-100: #e1e8f8;
+  --color-marino-200: #cbd8f2;
+  --color-marino-300: #a6bfea;
+  --color-marino-400: #7c9dde;
+  --color-marino-500: #5d7dd4;
+  --color-marino-600: #4963c7;
+  --color-marino-700: #3f51b5;
+  --color-marino-800: #394494;
+  --color-marino-900: #323d76;
+  --color-marino-950: #222749;
+
+  --color-roseal-50: #fff1f4;
+  --color-roseal-100: #ffe3e8;
+  --color-roseal-200: #ffcbd8;
+  --color-roseal-300: #ffa1b8;
+  --color-roseal-400: #ff6c93;
+  --color-roseal-500: #fa3971;
+  --color-roseal-600: #e3165b;
+  --color-roseal-700: #c40c4f;
+  --color-roseal-800: #a40d49;
+  --color-roseal-900: #8c0f44;
+  --color-roseal-950: #4e0321;
+
+  --color-bondi-50: #ebfffd;
+  --color-bondi-100: #cdfffd;
+  --color-bondi-200: #a1fffe;
+  --color-bondi-300: #60fdff;
+  --color-bondi-400: #18f1f8;
+  --color-bondi-500: #00d3de;
+  --color-bondi-600: #00a6b7;
+  --color-bondi-700: #088596;
+  --color-bondi-800: #106b7a;
+  --color-bondi-900: #125967;
+  --color-bondi-950: #053b47;
+
+  --color-proceso: #b40050;
+  --color-docs: #3e3a93;
+  --color-catalogo: #17631a;
+  --color-convocatoria: #461f89;
+  --color-resultados: #bf7b31;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
 
 @layer base{
 
@@ -13,7 +162,7 @@
 
     .card{ @apply flex w-80 flex-col}
     .card-img{ @apply grid grid-cols-12}
-    .triangle{ @apply w-[50px] h-[50px] self-end bg-gradient-to-br from-white from-0% via-white via-50%  bg-rose-800 to-50% }
+    .triangle{ @apply w-[50px] h-[50px] self-end bg-linear-to-br from-white from-0% via-white via-50%  bg-rose-800 to-50% }
     .title{ @apply bg-rose-500 px-3 py-4 text-lg font-semibold text-white rounded-bl-md rounded-tr-md }
 
 

@@ -1,13 +1,13 @@
 ---
-import bgImage from '/assets/UNAM.webp'
-import bgImage2 from '/assets/CATIC.webp'
+import bgImage from '../../public/assets/UNAM.webp'
+import bgImage2 from '../../public/assets/CATIC.webp'
 
 
 
 ---
 
 <!--Header -->
-<header class="bg-[url('/bg_head.webp')] h-14 md:h-24 pl-2 pr-2 border-b-1 border-black ">
+<header class="bg-[url('/bg_head.webp')] h-14 md:h-24 pl-2 pr-2 border-b border-black ">
 <!--  <div class="flex md:justify-between xl:mr-80 xl:ml-80 lg:pt-6 items-center  ">
         <div class="border  ">
             <a href="https://www.unam.mx" target="_blank"><img src={bgImage} alt="UNAM" class=" md:w-full md:h-full  "></a>
@@ -31,7 +31,7 @@ import bgImage2 from '/assets/CATIC.webp'
 <!--Navegación -->
 
 <nav class=" absolute right-0 top-0  md:relative  md:bg-venice-blue-800 h-20 md:h-14 z-30">
-    <div class="max-w-screen-xl flex flex-wrap place-content-end ml-56 md:ml-52 xl:ml-[600px] mr-4 pt-3 ">
+    <div class="max-w-(--breakpoint-xl) flex flex-wrap place-content-end ml-56 md:ml-52 xl:ml-[600px] mr-4 pt-3 ">
         <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500  md:hidden  dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
           <svg class="w-6 h-6" width="50" aria-hidden="true" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
@@ -40,22 +40,22 @@ import bgImage2 from '/assets/CATIC.webp'
         <div class="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-md  md:flex-row md:space-x-8 md:mt-0   dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
-              <a href="/" class="block py-2 pl-3 pr-4 text-ath-gray-300 bg-white  rounded md:bg-transparent md:text-ath-gray-50 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page" aria-label="Referencia a la página de incio"><i class="fa-solid fa-house-chimney"></i></a>
+              <a href="/" class="block py-2 pl-3 pr-4 text-ath-gray-300 bg-white  rounded-sm md:bg-transparent md:text-ath-gray-50 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page" aria-label="Referencia a la página de incio"><i class="fa-solid fa-house-chimney"></i></a>
             </li>
             <li>
-              <a href="/quienesSomos" class="block py-2 pl-3 pr-4 text-ath-gray-300 bg-white md:bg-transparent rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-ath-gray-50 md:p-0 dark:text-white md:dark:hover:text-ath-gray-50 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Quienes somos</a>
+              <a href="/quienesSomos" class="block py-2 pl-3 pr-4 text-ath-gray-300 bg-white md:bg-transparent rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-ath-gray-50 md:p-0 dark:text-white md:dark:hover:text-ath-gray-50 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Quienes somos</a>
             </li>
             <li>
-              <a href="/consejeros/" class="block py-2 pl-3 pr-4 text-ath-gray-300 bg-white md:bg-transparent rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-ath-gray-50 md:p-0 dark:text-white md:dark:hover:text-ath-gray-50 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Consejeros</a>
+              <a href="/consejeros/" class="block py-2 pl-3 pr-4 text-ath-gray-300 bg-white md:bg-transparent rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-ath-gray-50 md:p-0 dark:text-white md:dark:hover:text-ath-gray-50 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Consejeros</a>
             </li>
             <li>
-              <a href="https://www.red-tic.unam.mx/recursos/UNAM_AcuerdoCreacionCATIC2009.pdf" target="_blank" class="block py-2 pl-3 pr-4 text-ath-gray-300 bg-white md:bg-transparent rounded hover:bg-gray-300 md:hover:bg-transparent md:border-0 md:hover:text-ath-gray-50 md:p-0 dark:text-white md:dark:hover:text-ath-gray-50 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Acuerdo</a>
+              <a href="https://www.red-tic.unam.mx/recursos/UNAM_AcuerdoCreacionCATIC2009.pdf" target="_blank" class="block py-2 pl-3 pr-4 text-ath-gray-300 bg-white md:bg-transparent rounded-sm hover:bg-gray-300 md:hover:bg-transparent md:border-0 md:hover:text-ath-gray-50 md:p-0 dark:text-white md:dark:hover:text-ath-gray-50 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Acuerdo</a>
             </li>
             <li>
-              <a href="/normatividad/" class="block py-2 pl-3 pr-4 text-ath-gray-300 bg-white md:bg-transparent rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-ath-gray-50 md:p-0 dark:text-white md:dark:hover:text-ath-gray-50 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Normatividad</a>
+              <a href="/normatividad/" class="block py-2 pl-3 pr-4 text-ath-gray-300 bg-white md:bg-transparent rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-ath-gray-50 md:p-0 dark:text-white md:dark:hover:text-ath-gray-50 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Normatividad</a>
             </li>
             <li>
-              <a href="/convocatorias/" class="block py-2 pl-3 pr-4 text-ath-gray-300 bg-white md:bg-transparent rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-ath-gray-50 md:p-0 dark:text-white md:dark:hover:text-ath-gray-50 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Convocatorias</a>
+              <a href="/convocatorias/" class="block py-2 pl-3 pr-4 text-ath-gray-300 bg-white md:bg-transparent rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-ath-gray-50 md:p-0 dark:text-white md:dark:hover:text-ath-gray-50 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Convocatorias</a>
             </li>
           </ul>
         </div>
