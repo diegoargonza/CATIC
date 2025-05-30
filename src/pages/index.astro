@@ -1,19 +1,20 @@
 ---
+
 import Layout from '../layouts/Layout.astro';
 import Tarjeta from '../components/tarjeta.astro';
 
-import escNORMATECA from "../../public/assets/esc_NORMATECA.webp";
-import escREDTIC from "../../public/assets/esc_REDTIC.webp";
-import escDGTIC from "../../public/assets/esc_DGTIC.webp";
-import escDGPr from "../../public/assets/esc_DGPr.webp";
+import escNORMATECA from "../img/esc_NORMATECA.webp";
+import escREDTIC from "../img/esc_REDTIC.webp";
+import escDGTIC from "../img/esc_DGTIC.webp";
+import escDGPr from "../img/esc_DGPr.webp";
 
 //Imagenes para tarjetas
-import bgImg from '../../public/assets/quienes.webp';
-import bgImg2 from '../../public/assets/consejeros.webp';
-import bgImg3 from '../../public/assets/acuerdo2.webp';
-import bgImg4 from '../../public/assets/convocatorias.webp';
-import bgImg5 from '../../public/assets/sistemas_respTIC.webp';
-import bgImg6 from '../../public/assets/normatividad.webp'
+import ImgQuines from '../img/quienes.webp';
+import ImgConsojeros from '../img/consejeros.webp';
+import ImgAcuerdo from '../img/acuerdo2.webp';
+import ImgConvocatoria from '../img/convocatorias.webp';
+import ImgSistemaTic from '../img/sistemas_respTIC.webp';
+import ImgNormatividad from '../img/normatividad.webp'
 
 import Carrusel from '../components/carrusel.astro';
 
@@ -35,7 +36,7 @@ import Carrusel from '../components/carrusel.astro';
 			<!--Quines somos -->
 			<Tarjeta 
 			nombre="Quienes Somos" 
-			url= {bgImg}
+			url= {ImgQuines.src}
 			enlace = "/quienesSomos"
 			colorTitle ="bg-teal-800"
 			colorTriangle = "bg-teal-900"
@@ -45,7 +46,7 @@ import Carrusel from '../components/carrusel.astro';
 			<!--Consejeros 2019-2021 -->
 			<Tarjeta 
 			nombre="Consejeros 2019-2021"
-			url= {bgImg2} 
+			url= {ImgConsojeros.src} 
 			enlace = "/consejeros"
 			colorTitle ="bg-green-800"
 			colorTriangle = "bg-green-900"
@@ -55,7 +56,7 @@ import Carrusel from '../components/carrusel.astro';
 			<!--Acuerdos -->
 			<Tarjeta 
 			nombre="Acuerdos"
-			url= {bgImg3} 
+			url= {ImgAcuerdo.src} 
 			enlace='https://www.red-tic.unam.mx/recursos/UNAM_AcuerdoCreacionCATIC2009.pdf'
 			colorTitle ="bg-amber-700"
 			colorTriangle = "bg-amber-800"
@@ -65,7 +66,7 @@ import Carrusel from '../components/carrusel.astro';
 			<!--Convocatorias -->
 			<Tarjeta 
 			nombre="Convocatorias"
-			url= {bgImg4}
+			url= {ImgConvocatoria.src}
 			enlace = "/convocatorias" 
 			colorTitle ="bg-red-800"
 			colorTriangle = "bg-red-900"
@@ -75,7 +76,7 @@ import Carrusel from '../components/carrusel.astro';
 			<!--Sistemas para responsables TIC -->
 			<Tarjeta 
 			nombre="Sistemas para responsables TIC"
-			url= {bgImg5} 
+			url= {ImgSistemaTic.src} 
 			enlace = "/sistemastic"
 			colorTitle ="bg-violet-800"
 			colorTriangle = "bg-violet-900"
@@ -85,7 +86,7 @@ import Carrusel from '../components/carrusel.astro';
 			<!--Normatividad -->
 			<Tarjeta 
 			nombre="Normatividad"
-			url= {bgImg6}
+			url= {ImgNormatividad.src}
 			enlace = "/normatividad" 
 			colorTitle ="bg-blue-800"
 			colorTriangle ="bg-blue-900"
@@ -95,13 +96,13 @@ import Carrusel from '../components/carrusel.astro';
 
 		<!--Patrocinadores -->
 		<div class="flex flex-col sm:flex-row justify-center items-center gap-10 my-10">
-            <a href="https://www.red-tic.unam.mx/normatic" target="_blank" class="text-sm underline font-bold pr-3 pl-3"><img src={escNORMATECA} class="grayscale hover:filter-none transition-all" width="190" alt="NORMATECA TIC"></a>
+            <a href="https://www.red-tic.unam.mx/normatic" target="_blank" class="text-sm underline font-bold pr-3 pl-3"><img src={escNORMATECA.src} class="grayscale hover:filter-none transition-all" width="190" alt="NORMATECA TIC"></a>
           
-            <a href="https://www.red-tic.unam.mx/" target="_blank" class="text-sm underline font-bold pr-3 pl-3"><img src={escREDTIC} class="grayscale hover:filter-none transition-all" width="120" alt="REDTIC"></a>
+            <a href="https://www.red-tic.unam.mx/" target="_blank" class="text-sm underline font-bold pr-3 pl-3"><img src={escREDTIC.src} class="grayscale hover:filter-none transition-all" width="120" alt="REDTIC"></a>
        
-            <a href="https://www.tic.unam.mx/servicios-de-tic/" target="_blank" class="text-sm underline font-bold pr-3 pl-3"><img src={escDGTIC} class="grayscale hover:filter-none transition-all" width="190" alt="DGTIC"></a>
+            <a href="https://www.tic.unam.mx/servicios-de-tic/" target="_blank" class="text-sm underline font-bold pr-3 pl-3"><img src={escDGTIC.src} class="grayscale hover:filter-none transition-all" width="190" alt="DGTIC"></a>
          
-            <a href="https://www.proveeduria.unam.mx/app.dgpr/marco/" target="_blank" class="text-sm underline font-bold pr-3 pl-3"><img src={escDGPr} class="grayscale hover:filter-none transition-all" width="120" alt="DGPr"></a>
+            <a href="https://www.proveeduria.unam.mx/app.dgpr/marco/" target="_blank" class="text-sm underline font-bold pr-3 pl-3"><img src={escDGPr.src} class="grayscale hover:filter-none transition-all" width="120" alt="DGPr"></a>
         </div>
 
 

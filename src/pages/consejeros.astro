@@ -1,9 +1,11 @@
 ---
+
+import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
 
 
 //importar imagenes
-import bgImage1 from '../../public/assets/unamCard.webp';
+import bgImage1 from '../img/unamCard.webp';
 ---
 
 <Layout title='Consejeros | CATIC'>
@@ -13,34 +15,34 @@ import bgImage1 from '../../public/assets/unamCard.webp';
         <div class="flex flex-col justify-center items-center mt-9">
             <!-- <CardQ image1={bgImage1} />  -->
              <div class="rounded-md w-11/12  md:w-auto">
-                 <img src={bgImage1} class="md:w-[500px] h-full contrast-125 rounded-md  " alt=" ">
+                 <Image src={bgImage1} class="md:w-[500px] h-full contrast-125 rounded-md  " alt=" imagen de la unam">
              </div>
 
             <div class="mt-10 mx-4 md:mx-0 text-center">
-                <h5 class="text-xl mb-2 font-bold">Secretario Técnico del Consejo</h5>
+                <h2 class="text-xl mb-2 font-bold">Secretario Técnico del Consejo</h2>
 
                 <p class="mb-6">Dr. Héctor Benítez Pérez,<br>Director General de Cómputo y de Tecnologías de Información y Comunicación. </p>
 
-                <h5 class="text-xl mb-2">Consejeros</h5>
-                <h6 class="font-bold">Por el Sistema de Bachillerato:</h6>
+                <h2 class="text-xl mb-2">Consejeros</h2>
+                <h3 class="font-bold">Por el Sistema de Bachillerato:</h3>
                 <p class="mb-4">Ing. Armando Rodríguez Arguijo, Dirección General del CCH. </p>
 
-                <h6 class="font-bold">Por Escuelas Nacionales y Facultades en Ciudad Universitaria:</h6>
+                <h2 class="font-bold">Por Escuelas Nacionales y Facultades en Ciudad Universitaria:</h2>
                 <p class="mb-4">Mtro. Rodolfo Romero Flores, Facultad de Derecho.</p>
 
-                <h6 class="font-bold">Por Facultades de Estudios Superiores:</h6>
+                <h2 class="font-bold">Por Facultades de Estudios Superiores:</h2>
                 <p class="mb-4">Vacante</p>
 
-                <h6 class="font-bold">Por Campi universitarios foráneos:</h6>
+                <h2 class="font-bold">Por Campi universitarios foráneos:</h2>
                 <p class="mb-4">Dr. Heberto Ferreira Medina, Instituto de Investigaciones en Ecosistemas y Sustentabilidad. </p>
 
-                <h6 class="font-bold">Por Institutos y Centros de Investigación:</h6>
+                <h2 class="font-bold">Por Institutos y Centros de Investigación:</h2>
                 <p class="mb-4">Vacante</p>
 
-                <h6 class="font-bold">Por Dependencias Administrativas:</h6>
+                <h2 class="font-bold">Por Dependencias Administrativas:</h2>
                 <p class="mb-4">Vacante</p>
 
-                <h6 class="font-bold">Vocales representantes expertos de entidades externas: </h6>
+                <h2 class="font-bold">Vocales representantes expertos de entidades externas: </h2>
                 <p class="mb-4">Dra. Alejandra Herrera Mendoza y Dr. Carlos Zozaya Gorostiza.</p>
 
             </div>

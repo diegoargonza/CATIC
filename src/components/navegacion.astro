@@ -1,6 +1,7 @@
 ---
-import bgImage from '../../public/assets/UNAM.webp'
-import bgImage2 from '../../public/assets/CATIC.webp'
+import { Image } from 'astro:assets';
+import escudo_UNAM from '../img/UNAM.webp'
+import logo_DGTIC from '../img/CATIC.webp'
 
 
 
@@ -8,22 +9,14 @@ import bgImage2 from '../../public/assets/CATIC.webp'
 
 <!--Header -->
 <header class="bg-[url('/bg_head.webp')] h-14 md:h-24 pl-2 pr-2 border-b border-black ">
-<!--  <div class="flex md:justify-between xl:mr-80 xl:ml-80 lg:pt-6 items-center  ">
-        <div class="border  ">
-            <a href="https://www.unam.mx" target="_blank"><img src={bgImage} alt="UNAM" class=" md:w-full md:h-full  "></a>
-        </div>
-        <div class="border flex ">
-            <a href="https://catic.unam.mx" target="_blank"><img src={bgImage2} alt="Logo CATIC" class ="  md:h-9 md:w-auto lg:h-12  "></a>
-        </div>
-    </div>
-   -->    
+ 
 
    <div class="flex justify-between  xl:mr-80 xl:ml-80">
     <div class="md:mt-5 hidden md:block">
-      <a href="https://www.unam.mx" target="_blank"><img src={bgImage} alt="Logo UNAM" class="  "></a>
+      <a href="https://www.unam.mx" target="_blank"><Image src={escudo_UNAM} alt="Logo UNAM" class="  "/></a>
     </div>
     <div class="md:mt-5 ">
-      <a href="https://catic.unam.mx" target="_blank"><img src={bgImage2} alt="Logo CATIC" class="md:h-12 md:w-auto  w-[100px] h-[50px] "></a>
+      <a href="https://catic.unam.mx" target="_blank"><Image src={logo_DGTIC} alt="Logo CATIC" class="md:h-12 md:w-auto  w-[100px] h-[50px] "/></a>
     </div>
    </div>
 </header>
@@ -40,7 +33,7 @@ import bgImage2 from '../../public/assets/CATIC.webp'
         <div class="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-md  md:flex-row md:space-x-8 md:mt-0   dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
-              <a href="/" class="block py-2 pl-3 pr-4 text-ath-gray-300 bg-white  rounded-sm md:bg-transparent md:text-ath-gray-50 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page" aria-label="Referencia a la página de incio"><i class="fa-solid fa-house-chimney"></i></a>
+              <a href="/" class="block py-2 pl-3 pr-4 text-ath-gray-300 bg-white  rounded-sm md:bg-transparent md:text-ath-gray-50 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page" aria-label="Referencia a la página de incio">Inicio <i class="fa-solid fa-house-chimney"></i></a>
             </li>
             <li>
               <a href="/quienesSomos" class="block py-2 pl-3 pr-4 text-ath-gray-300 bg-white md:bg-transparent rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-ath-gray-50 md:p-0 dark:text-white md:dark:hover:text-ath-gray-50 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Quienes somos</a>
