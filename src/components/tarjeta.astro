@@ -6,10 +6,11 @@ interface Props {
     colorTriangle: string;
     url: string;
     enlace: string;
+    alt: string;
 
 }
 
-const {nombre, url,  colorTitle, colorTriangle, enlace} = Astro.props;
+const {nombre, url,  alt, colorTitle, colorTriangle, enlace} = Astro.props;
 ---
 
 <!-- <section class ="w-[400px] h-[400px]  "> -->
@@ -17,7 +18,7 @@ const {nombre, url,  colorTitle, colorTriangle, enlace} = Astro.props;
        <a href={enlace}>
         <div class="card-img ">
             <div class={`triangle ${colorTriangle} to-50% `}></div>
-            <img src={url} alt=" " class="col-span-10 hover:cursor-pointer w-full h-full " />
+            <img src={url} alt={alt} class="col-span-10 hover:cursor-pointer w-full h-full " />
         </div>
         <div class={`title ${colorTitle}`}>{nombre} </div>
     </div>
