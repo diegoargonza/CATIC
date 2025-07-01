@@ -53,7 +53,7 @@ export function initCarrusel(){
     let autoSlide = setInterval(() => {
       currentIndex = (currentIndex + 1) % totalSlides;
       updateCarousel();
-    }, 8000);
+    }, 10000);
     
     
     

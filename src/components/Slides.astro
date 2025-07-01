@@ -14,8 +14,10 @@ import { string } from 'astro:schema'
 ---
  <a class="relative w-full shrink-0 md:h-full" href={enlace} target="_blank">
     <img src={imagen} class="w-full h-full" alt="siguiente referencia">
-    <div class={`absolute inset-0 flex flex-col items-center justify-center text-white px-4 sm:px-10 md:px-20 lg:px-32 text-center ${matiz}`}>
-        <h2 class="text-sm sm:text-base md:text-xl lg:text-3xl font-bold break-keep">{titulo}</h2>
+    <div class={`absolute inset-0  flex flex-col items-center justify-center text-white px-4 sm:px-10 md:px-20 lg:px-32 text-center ${matiz}`}>
+        <div class=" w-full md:w-210 ">
+            <p class="text-sm sm:text-base md:text-2xl lg:text-4xl font-semibold  ">{titulo}</p>
+        </div>
         <i class={`${icon}`}></i>
     </div>
 </a>
